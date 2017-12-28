@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta charset="utf-8" /> 
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="loadStuff();">
+<h1> Étkezési napló </h1>
+<div id="btns">
+    <form action="">
+         <input type="button" value="Új kaja" onclick="addkaja();"/>
+         <input type="button" value="Új tünet" onclick="addtunet();"/>
+
+    </form> 
+	</div>
+	<div id="naplo">
+	</div>
+	<div id="keszetelek">
+	</div>
+	<form action="">
+		<input type="button" id="mentes" value="Mentés" onclick="saveStuff();"/>
+		<!--<input type="button" id="toltes" value="Töltés" onclick="loadStuff();"/>-->
+		<input type="button" id="torles" value="Törlés" onclick="deleteStuff();" style="float: right;"/>
+		
+	</form>
+	<script src="tunetnaplo.js"></script>
+</body>
+</html>
